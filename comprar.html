@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Odyssey Store</title>
+         <link rel="stylesheet" type="text/css" href="style.css">
+        
+         <link rel="shortcut icon" href="img/favicon.png">
+        
+        <style>
+          
+        #box-compra{
+            width:600px;
+            height: 500px;
+            padding:2px;
+            margin: auto;
+        }    
+            
+             /*LOGIN*/        
+        
+	input[type=submit]{
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+
+        }
+
+            input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        input[type=nome],[type=CPF],[type=card],[type=date],[type=endereco] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 0px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+        }
+
+        .cads{
+            font-family: 'Lato', sans-serif;
+            color:black;
+            text-align: left;
+
+
+        }
+
+        /*FIM LOGIN*/
+
+            .back{
+               width: 85px;
+               height: 20px;
+               background: #bbbbbb; 
+               padding: 15px 25px;;
+               text-align: center;
+               font-family: 'Montserrat', sans-serif;
+               color:white;
+            }
+            
+            .back:hover{
+              background:#9d1b1b;
+            }
+            
+            a{
+                text-decoration: none;
+                display: inline-block;
+            }
+            
+            .cads{
+                color:dimgray;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div id="header">
+        
+            <div class="logo"></div>
+            
+        </div>
+        <div id="barra"></div>
+        
+        <hr style="visibility: hidden; height: 30px;"/>
+        
+        
+        
+        
+        <div id="box-compra">
+            
+              <a href="index.html"><div class="back"> << &nbsp&nbsp Voltar</div></a>
+            
+              <hr style="visibility: hidden; height: 30px;"/>
+            
+            <h2 class="ex1">Conclua a sua compra</h2>
+            
+                <hr style="visibility: hidden; height: 30px;"/>
+            
+                 <form id="cad_dados" method="post" action="#"> 
+				
+                    <strong> <h3 class="cads">Nome</h3> </strong>
+                        <input type = "nome" name = "nome"  maxlength="16" placeholder="Informe o seu nome completo" required>
+
+                    <hr style="height:5pt; visibility:hidden;"/>
+
+                    <strong> <h3 class="cads">CPF</h3> </strong>
+                        <input type = "cpf" name = "cpf"  maxlength="11" placeholder="Informe o seu CPF" required>
+
+                    <hr style="height:5pt; visibility:hidden;"/>
+
+                    <strong> <h3 class="cads">Número do Cartão de crédito</h3> </strong>
+                        <input type = "card" name = "card" maxlength="16" placeholder="Informe o número do seu cartão de crédito" required>
+
+                    <hr style="height:5pt; visibility:hidden;"/>
+
+                    <strong> <h3 class="cads">Endereço</h3> </strong>
+                        <br/><input type = "endereco" name = "endereco"  maxlength="100" placeholder="Informe seu endereço" required><br/>
+
+                    <hr style="height:5pt; visibility:hidden;"/>
+
+                    <strong> <h3 class="cads">Data desejada de entrega</h3> </strong>
+                        <br/><input type = "date" name = "data" placeholder="Informe a data que você quer receber o produto" required><br/>
+                              <br><br>
+
+                     <input type=submit onclick="window.location.href='index.html'" name='button' value='Comprar'/>
+
+                    
+                
+					</form>
+            
+            </div>
+
+            <hr style="visibility: hidden; height: 50px;"/>
+        
+        
+        <hr style="visibility: hidden; height: 90px;"/>
+        
+        <footer>
+            
+            <h2 class="ex2">All rights reserverd © Odyssey Store® 2018<br>design by lucas seixas</h2>
+            
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <title>Odyssey Store</title>
+         <link rel="stylesheet" type="text/css" href="style.css">
+        
+         <link rel="shortcut icon" href="img/favicon.png">
+        
+        <style>
+            
+            #box-jogo{
+                width:1100px;
+                height:597px;
+                padding:2px;
+                margin: auto;
+            }
+            
+            /* SLIDE */
+            
+            #cssSlider {
+                width: 750px;
+                height: 400px;
+                overflow: hidden;
+                border: 2px solid #9d1b1b;
+            }
+
+            #sliderImages {
+                width : 3750px;
+                height: 400px;
+                overflow: hidden;
+                animation: slide 16s infinite;
+                -moz-animation: slide 16s infinite;
+                -webkit-animation: slide 16s infinite;
+                -o-animation: slide 16s infinite;
+            }
+
+            #sliderImages img {
+                float: left;
+            }
+
+            @keyframes slide{
+                0%{margin-left: 0px;}
+                17%{margin-left: 0px;}
+                20%{margin-left: -750px;}
+                37%{margin-left: -750px;}
+                40%{margin-left: -1500px;}
+                57%{margin-left: -1500px;}
+                60%{margin-left: -2250px;}
+                77%{margin-left: -2250px;}
+                80%{margin-left: -3000px;}
+                97%{margin-left: -3000px;}
+                100%{margin-left: 0px;}
+            }
+
+            @-moz-keyframes slide{
+                0%{margin-left: 0px;}
+                17%{margin-left: 0px;}
+                20%{margin-left: -750px;}
+                37%{margin-left: -750px;}
+                40%{margin-left: -1500px;}
+                57%{margin-left: -1500px;}
+                60%{margin-left: -2250px;}
+                77%{margin-left: -2250px;}
+                80%{margin-left: -3000px;}
+                100%{margin-left: -3000px;}
+            }
+
+            @-webkit-keyframes slide{
+                0%{margin-left: 0px;}
+                17%{margin-left: 0px;}
+                20%{margin-left: -750px;}
+                37%{margin-left: -750px;}
+                40%{margin-left: -1500px;}
+                57%{margin-left: -1500px;}
+                60%{margin-left: -2250px;}
+                77%{margin-left: -2250px;}
+                80%{margin-left: -3000px;}
+                100%{margin-left: -3000px;}
+            }
+
+            @-o-keyframes slide{
+                0%{margin-left: 0px;}
+                17%{margin-left: 0px;}
+                20%{margin-left: -750px;}
+                37%{margin-left: -750px;}
+                40%{margin-left: -1500px;}
+                57%{margin-left: -1500px;}
+                60%{margin-left: -2250px;}
+                77%{margin-left: -2250px;}
+                80%{margin-left: -3000px;}
+                100%{margin-left: -3000px;}
+            }
+            
+            /* Fim do SLIDE */
+            
+            
+            #box-jogo2{
+                position: absolute;
+                width:300px;
+                height:404px;
+                margin-top: -404px;
+                margin-left: 780px;
+            }
+            
+            .comprarbtn{
+               width: 250px;
+               height: 20px;
+               background: linear-gradient(to top, #82ac00, #9cbd00);
+               padding: 15px 25px;
+               text-align: center;
+               font-family: 'Montserrat', sans-serif;
+               color:white;
+            }
+            
+            .comprarbtn:hover{
+               opacity: 0.7;
+            }
+            
+            a{
+                text-decoration: none; 
+                display: inline-block
+            }
+            
+            .back{
+               width: 85px;
+               height: 20px;
+               background: #bbbbbb; 
+               padding: 15px 25px;
+               text-align: center;
+               font-family: 'Montserrat', sans-serif;
+               color:white;
+            }
+            
+            .back:hover{
+              background:#9d1b1b;
+            }
+            
+             #preco{
+                color:#999999;   
+                border: 1px solid #a2a2a2;
+                border-radius: 5px;
+                padding:4px;
+                margin-left: 80px;
+            }
+            
+            #preco:hover{
+                color:white;;  
+                background: linear-gradient(to top, #82ac00, #9cbd00);
+                border: 1px solid #008000;  
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="header">
+        
+            <div class="logo"></div>
+            
+        </div>
+        
+        <div id="barra"></div>
+        
+            <hr style="visibility: hidden; height: 60px;"/>
+        
+        <div id="box-jogo">
+            <a href="index.html"><div class="back"> << &nbsp&nbsp Voltar</div></a>
+            
+            <hr style="visibility: hidden; height: 30px;"/>
+            
+            <h2 class="ex1">Bioshock 2</h2>
+            <div id="cssSlider">
+              <div id="sliderImages">
+                    <img id="si_1" src="img/bioshock2/1.png"/>
+                    <img id="si_2" src="img/bioshock2/2.png"/>
+                    <img id="si_3" src="img/bioshock2/3.png"/>
+                    <img id="si_4" src="img/bioshock2/4.png"/>
+                    <img id="si_5" src="img/bioshock2/5.png"/>
+                    <div style="clear:left;"></div>
+                </div>
+            </div>
+            
+            <div id="box-jogo2">
+                <img src="img/bioshock2/logo.png"/>
+                <h1 class="ex3">10 anos depois primeiro Bioshock, o salão do arrebamento ecoou novamente os pecados do passado.</h1>
+
+                <hr style="visibility: hidden; height: 30px;"/>
+                <h1 class="ex4"><font id="preco">R$ 29,99</font></h1>
+                <hr style="visibility: hidden; height: 30px;"/>
+                
+                <a href="comprar.html"><div class="comprarbtn">Comprar</div></a>
+            </div>
+
+        </div>
+        
+        <hr style="visibility: hidden; height: 30px;"/>
+        
+        <footer>
+            
+            <h2 class="ex2">All rights reserverd © Odyssey Store® 2018<br>design by lucas seixas</h2>
+            
+        </footer>
+    </body>
+</html>
